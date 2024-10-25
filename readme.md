@@ -1,5 +1,4 @@
 #installation 
-docker-compose up --build
 
 #usage
 frontend access http://localhost:3000
