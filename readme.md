@@ -27,4 +27,4 @@ Alternatively, you can pull the Docker images directly from Docker Hub:
   docker pull ahmedbichiou/vuejs-net-taxiservice-graphqltaxibackend:latest
 - **FrontEnd Service**  
   ```bash
-docker pull ahmedbichiou/vuejs-net-taxiservice-frontend:latest
+  docker pull ahmedbichiou/vuejs-net-taxiservice-frontend:latest
