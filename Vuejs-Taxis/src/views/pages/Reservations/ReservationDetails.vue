@@ -178,9 +178,6 @@ async function submitForm() {
         }
       }
     `;
-    router.push({
-      path: '/confirmation',
-    });
     try {
       // Send the mutation request to the server
       const response = await client.request(INSERT_CLIENT);
@@ -205,9 +202,14 @@ async function submitForm() {
 
       // Optionally update local state or perform any action with the inserted transfer
       console.log('New transfer created successfully:', newTransfer);
-      router.push({
+      setTimeout(() => {
+   
+    // Navigate to /ReservationDetails route with query parameters
+    router.push({
       path: '/confirmation',
+      query: reservationData
     });
+  }, 3000);
     } catch (err) {
       // Handle any errors that occur during the request
   
