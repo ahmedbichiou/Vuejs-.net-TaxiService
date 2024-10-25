@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  graphqltaxibackend:
+    build:
+      context: "C:\\Users\\Spray\\Desktop\\NET projects\\GraphQLMongoDB"
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: "C:\\Users\\Spray\\Desktop\\NET projects\\Vuejs-Taxis"
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - VUE_APP_API_URL=http://graphqltaxibackend:80
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

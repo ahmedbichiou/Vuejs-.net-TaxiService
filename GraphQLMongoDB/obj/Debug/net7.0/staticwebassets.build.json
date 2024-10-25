@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sC5tMSTnvNLjlCoP0ReDQ4omzmnuECUaEeWmia2WCRg=",
+  "Source": "GraphQLMongoDBDemo",
+  "BasePath": "_content/GraphQLMongoDBDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
