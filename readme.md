@@ -35,5 +35,5 @@ And run them with
   docker run -d -p 5000:80 --name graphqltaxibackend ahmedbichiou/vuejs-net-taxiservice-graphqltaxibackend:latest
 **FrontEnd Container**  
   ```bash
-  docker run -d -p 3000:80 --name frontend -e VUE_APP_API_URL=http://localhost:5000 ahmedbichiou/vuejs-net-taxiservice-frontend:latest
+docker run -d -p 3000:80 --name frontend -e VUE_APP_API_URL=http://localhost:5000 ahmedbichiou/vuejs-net-taxiservice-frontend:latest
 
